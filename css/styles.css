@@ -1,16 +1,131 @@
+:root {
+  --body-text-color: #434455;
+  --second-main-color: #2e2f42;
+  --accent-text-color: #404bbf;
+}
+
+/* ------------------General styles*/
+
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
+  background-color: #ffffff;
+  color: var(--body-text-color);
 }
 
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
 ul,
 ol {
   list-style-type: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 4%;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sections-title {
+  font-weight: 700;
+  color: var(--second-main-color);
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--second-main-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #9747ff;
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--second-main-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logo span {
+  color: #4d5ae5;
+}
+
+.logo-down {
+  color: #f4f4fd;
+}
+/* --------------------Header */
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--second-main-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-text-color);
+}
+
+.header-address-link {
+  color: currentColor;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--accent-text-color);
+}
+
+/* -------------------Hero Section */
+.hero {
+  background-color: var(--second-main-color);
+}
+.hero-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+/* ------------------Our approaches */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Our Team */
+.team {
+  background-color: #f4f4fd;
+}
+
+/* ------------------Our Portfolio */
+
+/* -----------------Footer */
+.footer {
+  background-color: var(--second-main-color);
+}
+
+.footer-text {
+  color: #e7e9fc;
 }
