@@ -16,20 +16,6 @@ body {
   color: var(--body-text-color);
 }
 
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
 a {
   text-decoration: none;
 }
@@ -64,6 +50,8 @@ ol {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .sub-title {
@@ -73,6 +61,7 @@ ol {
   color: var(--second-main-color);
   text-transform: capitalize;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .logo {
@@ -118,19 +107,24 @@ ol {
 .hero {
   background-color: var(--second-main-color);
 }
+
 .hero-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 /* ------------------Our approaches */
 
-/* Our Team */
+/* ---------------------Our Team */
 .team {
   background-color: #f4f4fd;
+}
+.team-item {
+  background-color: #ffffff;
 }
 
 /* ------------------Our Portfolio */
