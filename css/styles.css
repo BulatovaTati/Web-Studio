@@ -1,19 +1,37 @@
 :root {
+  /* ------------------------------Text color */
   --body-text-color: #434455;
   --second-main-color: #2e2f42;
   --accent-text-color: #404bbf;
+  /* --------------------------------BCG COLOR */
+  /* ----------------------------------Font */
+  --primary-font-fam: 'Roboto', sans-serif;
+  --secondary-font-fam: 'Raleway', sans-serif;
 }
 
-/* ------------------General styles*/
+/* ----------------------Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  background-color: #ffffff;
-  color: var(--body-text-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -24,13 +42,38 @@ address {
   font-style: normal;
 }
 
-ul,
-ol {
-  list-style-type: none;
+/* ------------------General styles*/
+body {
+  font-family: var(--primary-font-fam);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  color: var(--body-text-color);
+}
+
+.container {
+  width: 1158px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+  border: 1px solid red;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font-fam);
   font-weight: 500;
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
@@ -65,7 +108,7 @@ ol {
 }
 
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font-fam);
   color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
