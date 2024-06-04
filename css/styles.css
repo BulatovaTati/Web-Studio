@@ -78,10 +78,16 @@ body {
   font-family: var(--primary-font-fam);
   font-weight: 500;
   letter-spacing: 0.04em;
+  line-height: 1.5;
+
+  padding: 16px 32px;
+  min-width: 169px;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   color: #ffffff;
+  border-radius: 4px;
   cursor: pointer;
-  line-height: 1.5;
 }
 
 .btn:hover,
@@ -179,24 +185,42 @@ body {
 
 /* -------------------Hero Section */
 .hero {
+  text-align: center;
   background-color: var(--second-main-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
+  width: 620px;
+  margin: 0 auto 48px;
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
 /* ------------------Our approaches */
+.approach-list {
+  display: flex;
+  gap: 24px;
+}
+
+.approach-item-title {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.approach-item-text {
+  width: 264px;
+}
 
 /* ---------------------Our Team */
 .team {
   background-color: #f4f4fd;
 }
+
 .team-item {
   background-color: #ffffff;
 }
