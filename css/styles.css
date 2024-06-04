@@ -221,8 +221,25 @@ body {
   background-color: #f4f4fd;
 }
 
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  text-align: center;
+  gap: 24px;
+}
 .team-item {
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-member {
+  margin-bottom: 8px;
+}
+.team-container {
+  padding: 32px 16px;
 }
 
 /* ------------------Our Portfolio */
