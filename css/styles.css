@@ -183,7 +183,6 @@ body {
 .logo-down {
   /* Visual */
   color: #f4f4fd;
-  background: #000;
 }
 
 .flex-container {
@@ -250,6 +249,23 @@ body {
   color: var(--accent-text-color);
 }
 
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -2px;
+
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+}
 /* -------------------Hero Section */
 
 .hero {
