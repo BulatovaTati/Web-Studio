@@ -463,16 +463,12 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-.portfolio-item-link {
-  /* Box Model */
-  display: inline-block;
-
+.portfolio-item {
   /* Positioning */
   transition: box-shadow var(--animation-time) var(--timing-function);
 }
 
-.portfolio-item-link:hover {
+.portfolio-item:hover {
   /* Visual */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -500,8 +496,8 @@ body {
   transition: transform var(--animation-time) var(--timing-function);
 }
 
-.portfolio-item-link:hover .overlay-description-container,
-.portfolio-item-link:focus .overlay-description-container {
+.portfolio-item:hover .overlay-description-container,
+.portfolio-item:focus .overlay-description-container {
   /* Others */
   transform: translateY(0%);
   opacity: 1;
