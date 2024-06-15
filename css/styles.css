@@ -360,6 +360,45 @@ body {
   padding: 32px 0;
 }
 
+.team-socials-list {
+  /* Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-socials-item:not(:last-child) {
+  /* Box Model */
+  margin-right: 24px;
+}
+
+.team-member-text {
+  /* Box Model */
+  margin-bottom: 8px;
+}
+
+.team-socials-link {
+  /* Box Model */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  /* Visual */
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  border-radius: 50%;
+
+  /* Others */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: #404bbf;
+}
+
 /* ------------------Our Portfolio */
 
 .portfolio-list {
