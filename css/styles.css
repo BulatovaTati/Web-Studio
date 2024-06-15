@@ -564,11 +564,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-socials-item:not(:last-child) {
-  /* Box Model */
-  margin-right: 16px;
+  gap: 16px;
 }
 
 .footer-socials-title {
@@ -580,7 +576,7 @@ body {
   font-size: 16px;
 
   /* Visual */
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-socials-link {
