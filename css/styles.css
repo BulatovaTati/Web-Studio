@@ -201,7 +201,7 @@ body {
 
 .socials-link {
   /* Box Model */
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -218,6 +218,8 @@ body {
 .header {
   /* Visual */
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .navigation {
@@ -290,7 +292,7 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
 
   /* Box Model */
   width: 48px;
@@ -327,6 +329,7 @@ body {
     url(../images/hero/herobcg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -416,11 +419,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.team-socials-item:not(:last-child) {
-  /* Box Model */
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .team-member-text {
@@ -505,7 +504,7 @@ body {
 .portfolio-item-link:hover .overlay-description-container,
 .portfolio-item-link:focus .overlay-description-container {
   /* Others */
-  transform: translateY(0);
+  transform: translateY(0%);
   opacity: 1;
 }
 
