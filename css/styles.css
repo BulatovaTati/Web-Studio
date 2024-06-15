@@ -16,12 +16,6 @@
 5. Other (transitions, animations, transforms) */
 
 /* ----------------------Resets */
-*,
-*::before,
-*::after {
-  /* Box Model */
-  box-sizing: border-box;
-}
 
 h1,
 h2,
@@ -189,6 +183,7 @@ body {
 .logo-down {
   /* Visual */
   color: #f4f4fd;
+  background: #000;
 }
 
 .flex-container {
@@ -261,12 +256,26 @@ body {
   /* Box Model */
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 
   /* Typography */
   text-align: center;
 
   /* Visual */
   background-color: var(--second-main-color);
+}
+
+.hero-overlay {
+  /* Box Model */
+  max-width: 1440px;
+  height: 600px;
+
+  /* Visual */
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/herobcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
