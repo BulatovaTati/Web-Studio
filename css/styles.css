@@ -482,7 +482,7 @@ body {
   overflow: hidden;
 }
 
-.overlay-description-container {
+.overlay-desctiption {
   /* Positioning */
   position: absolute;
   width: 100%;
@@ -492,22 +492,9 @@ body {
   opacity: 0;
   transform: translateY(100%);
 
-  /* Others */
-  transition: transform var(--animation-time) var(--timing-function);
-}
-
-.portfolio-item:hover .overlay-description-container,
-.portfolio-item:focus .overlay-description-container {
-  /* Others */
-  transform: translateY(0%);
-  opacity: 1;
-}
-
-.overlay-desctiption {
   /* Box Model */
   height: 100%;
   width: 100%;
-
   padding: 40px 32px 0;
 
   /* Typography */
@@ -519,6 +506,14 @@ body {
 
   /* Others */
   overflow-y: auto;
+  transition: transform var(--animation-time) var(--timing-function);
+}
+
+.portfolio-item:hover .overlay-desctiption,
+.portfolio-item:focus .overlay-desctiption {
+  /* Others */
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 /* -----------------Footer */
