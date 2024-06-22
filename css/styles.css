@@ -960,14 +960,20 @@ input[type='checkbox'] {
   height: 40px;
   border: 1px solid var(--white-standart-color);
 
+  /* Typography */
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
   /* Visual */
   color: var(--white-standart-color);
   background-color: transparent;
   border-radius: 4px;
+  box-shadow: var(--form-shadow);
 
   /* Others */
-  transition: box-shadow var(--animation-time) var(--timing-function),
-    outline var(--animation-time) var(--timing-function);
+  transition: outline var(--animation-time) var(--timing-function);
 }
 
 .subscribe-form-input::placeholder {
@@ -984,22 +990,24 @@ input[type='checkbox'] {
 .subscribe-form-input:focus,
 .subscribe-form-input:focus-within {
   /* Visual */
-  box-shadow: var(--form-shadow);
   outline: none;
 }
 
 .submit-button {
-  /* Positioning */
-  position: relative;
-
   /* Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 24px;
   min-width: 165px;
   border: none;
 
   /* Typography */
+  font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+
   text-align: left;
 
   /* Visual */
@@ -1020,10 +1028,8 @@ input[type='checkbox'] {
 }
 
 .form-icon-submit {
-  /* Positioning */
-  position: absolute;
-  top: 8px;
-  right: 25px;
+  /* Box Model */
+  margin-left: 16px;
 
   /* Visual */
   fill: var(--white-standart-color);
