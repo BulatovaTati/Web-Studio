@@ -814,7 +814,7 @@ body {
   /* Visual */
   color: #2e2f42;
 }
-.form-container {
+.form-label-container {
   margin-bottom: 8px;
 }
 
@@ -839,7 +839,6 @@ body {
 
   /* Box Model */
   display: block;
-  margin-bottom: 8px;
 }
 
 .form-input {
@@ -856,17 +855,13 @@ body {
   outline: transparent;
 
   /* Others */
-  transition: outline var(--animation-time) var(--timing-function),
-    border-color var(--animation-time) var(--timing-function);
+  transition: border-color var(--animation-time) var(--timing-function);
 }
 
 .form-input-container:hover .form-input,
 .form-input-container:focus-within .form-input {
   /* Visual */
   border-color: #4d5ae5;
-
-  /* Others */
-  outline: 0;
 }
 
 .form-icon {
@@ -880,8 +875,7 @@ body {
 
   /* Others */
   transform: translateY(-50%);
-  transition: color var(--animation-time) var(--timing-function),
-    fill var(--animation-time) var(--timing-function);
+  transition: fill var(--animation-time) var(--timing-function);
 }
 
 .form-input-container:hover .form-icon,
