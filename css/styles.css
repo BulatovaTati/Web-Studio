@@ -884,7 +884,7 @@ body {
   fill: #4d5ae5;
 }
 
-.comments {
+.form-comments-container {
   /* Box Model */
   margin-bottom: 16px;
 }
