@@ -853,6 +853,7 @@ body {
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  outline: transparent;
 
   /* Others */
   transition: outline var(--animation-time) var(--timing-function),
@@ -862,7 +863,7 @@ body {
 .form-input-container:hover .form-input,
 .form-input-container:focus-within .form-input {
   /* Visual */
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 
   /* Others */
   outline: 0;
