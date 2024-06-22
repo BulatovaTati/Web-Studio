@@ -791,12 +791,16 @@ body {
   transition: fill var(--animation-time) var(--timing-function);
 }
 
+.button-close:hover .icon-close,
+.button-close:focus .icon-close {
+  fill: var(--white-standart-color);
+}
+
 .button-close:hover,
 .button-close:focus {
   /* Visual */
   background-color: #404bbf;
   border: none;
-  fill: var(--white-standart-color);
 }
 
 .form-title {
@@ -809,6 +813,9 @@ body {
 
   /* Visual */
   color: #2e2f42;
+}
+.form-container {
+  margin-bottom: 8px;
 }
 
 .form-label {
