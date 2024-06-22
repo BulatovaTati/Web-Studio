@@ -722,6 +722,7 @@ body {
 .modal-overlay.is-open {
   /* Visual */
   opacity: 0;
+  visibility: hidden;
 
   /* Others */
   pointer-events: none;
@@ -926,15 +927,29 @@ body {
 }
 
 .form-checkbox-container {
+  /* Box Model */
   margin-bottom: 24px;
 }
 
-.form-checkbox {
-  /* Typography */
+.form-input-checkbox {
+  /* Box Model */
+  display: inline-flex;
+  margin-left: 8px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
 
+.form-label-checkbox {
+  /* Typography */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+
+  /* Visual */
+  color: #8e8f99;
+
+  /* Others */
+  cursor: pointer;
 }
 
 .icon-uncheck {
@@ -944,6 +959,7 @@ body {
   justify-content: center;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
 
   /* Visual */
   fill: transparent;
@@ -952,17 +968,23 @@ body {
 
   /* Others */
   transition: background-color var(--animation-time) var(--timing-function),
-    border-color var(--animation-time) var(--timing-function);
+    border-color var(--animation-time) var(--timing-function),
+    fill var(--animation-time) var(--timing-function);
 }
 
-.checkbox:checked ~ .icon-uncheck {
+.form-input-checkbox:checked + .form-label-checkbox > .icon-uncheck {
+  /* Visual */
   background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
+  border: none;
 }
 
 .policy-link {
+  /* Typography */
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+
   /* Visual */
   color: #4d5ae5;
-  text-decoration: underline;
 }
