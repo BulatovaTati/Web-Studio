@@ -628,8 +628,16 @@
               </svg>
             </div>
           </div>
-          <label for="user-comment" class="form-label comments">Comment</label>
-          <textarea class="form-comments" name="user-comment" placeholder="Text input"></textarea>
+          <div class="form-comments-container">
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea
+              class="form-comments"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
           <label class="form-checkbox">
             <div class="form-icon-container">
               <input
@@ -650,7 +658,6 @@
               >
             </div>
           </label>
-
           <button class="form-button btn" type="submit">Send</button>
         </form>
       </div>
