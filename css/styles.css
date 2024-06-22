@@ -859,6 +859,7 @@ body {
 }
 
 .form-input-container:hover .form-input,
+.form-input-container:focus .form-input,
 .form-input-container:focus-within .form-input {
   /* Visual */
   border-color: #4d5ae5;
@@ -968,7 +969,7 @@ body {
 
   /* Others */
   transition: background-color var(--animation-time) var(--timing-function),
-    border-color var(--animation-time) var(--timing-function),
+    border var(--animation-time) var(--timing-function),
     fill var(--animation-time) var(--timing-function);
 }
 
