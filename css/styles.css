@@ -731,7 +731,7 @@ body {
 
 .backdrop.is-open .modal {
   /* Others */
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%);
 }
 
 .modal {
@@ -756,7 +756,7 @@ body {
 
   /* Others */
   overflow-y: auto;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   transition: transform var(--animation-time) var(--timing-function);
 }
 
