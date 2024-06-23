@@ -616,7 +616,6 @@ body {
   border: 1px solid var(--white-standart-color);
 
   /* Typography */
-
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -646,6 +645,7 @@ body {
 .subscribe-form-input:focus-within {
   /* Visual */
   outline: none;
+  outline: 1px solid #31d0aa;
 }
 
 .submit-button {
