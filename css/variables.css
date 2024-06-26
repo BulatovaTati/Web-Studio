@@ -1,0 +1,33 @@
+:root {
+  /* ------------------------------Text color */
+  --body-text-color: #434455;
+  --second-main-color: #2e2f42;
+  --accent-text-color: #404bbf;
+  --white-standart-color: #ffffff;
+  --icons-fill: #f4f4fd;
+  /* --------------------------------BCG COLOR */
+  --icons-bcg: #4d5ae5;
+  --bottom-bcg: #4d5ae5;
+
+  /* ----------------------------------Font */
+  --primary-font-fam: 'Roboto', sans-serif;
+  --secondary-font-fam: 'Raleway', sans-serif;
+
+  /* -----------------------------------Shadows */
+  --form-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --header-line-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  --team-card-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  --portfolio-card-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+
+  /* ------------------------------Animation Transition-CUBIC */
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-time: 250ms;
+
+  /* -------------------------------- Adaptive */
+  --mobile: 320px;
+  --tablet: 768px;
+  --desktop: 1158px;
+}
