@@ -84,20 +84,14 @@ body {
 
 .sub-title {
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
   text-transform: capitalize;
 
   color: var(--second-main-color);
-}
-
-@media screen and (min-width: 1158px) {
-  .sub-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 .logo {
@@ -372,24 +366,24 @@ body {
 }
 
 /* ------------------Our approaches */
+.approach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
 
 @media screen and (min-width: 768px) {
   .approach-list {
-    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 72px 24px;
   }
 }
+
 @media screen and (min-width: 1158px) {
   .approach-list {
     flex-wrap: nowrap;
     gap: 24px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .approach-item:not(:last-child) {
-    margin-bottom: 72px;
   }
 }
 
@@ -425,12 +419,26 @@ body {
 
 .approach-item-title {
   margin-bottom: 8px;
-  text-align: center;
-}
 
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--second-main-color);
+}
 @media screen and (min-width: 768px) {
   .approach-item-title {
-    margin-bottom: 8px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .approach-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
     text-align: left;
   }
 }
@@ -449,14 +457,26 @@ body {
 
 .team-list {
   display: flex;
-  gap: 24px;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    gap: 64px 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  @media screen and (min-width: 768px) {
+    .team-list {
+      gap: 0 24px;
+    }
+  }
+}
 .team-item {
-  width: calc((100% - 72px) / 4);
-
   background-color: var(--white-standart-color);
   border-radius: 0 0 4px 4px;
   box-shadow: var(--team-card-shadow);
