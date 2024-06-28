@@ -6,6 +6,7 @@ body {
 
   background-color: var(--white-standart-color);
   color: var(--body-text-color);
+  overflow: hidden;
 }
 
 .container {
@@ -859,7 +860,7 @@ body {
   left: 50%;
 
   width: 288px;
-  min-height: 623px;
+  max-height: 100vh;
   padding: 72px 16px 24px 16px;
 
   border-radius: 4px;
@@ -875,7 +876,7 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
-    min-height: 584px;
+
     padding-left: 24px;
     padding-right: 24px;
   }
