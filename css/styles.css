@@ -84,7 +84,6 @@ body {
 
 .sub-title {
   margin-bottom: 8px;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -264,6 +263,7 @@ body {
 .menu-button-open:focus .icon-menu {
   fill: #404bbf;
 }
+
 @media screen and (min-width: 768px) {
   .menu-button-open {
     display: none;
@@ -271,7 +271,6 @@ body {
 }
 
 /* -------------------Hero Section */
-
 .hero {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -419,7 +418,6 @@ body {
 
 .approach-item-title {
   margin-bottom: 8px;
-
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -439,7 +437,6 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-
     text-align: left;
   }
 }
@@ -451,7 +448,6 @@ body {
 }
 
 /* ---------------------Our Team */
-
 .team {
   background-color: #f4f4fd;
 }
@@ -507,15 +503,10 @@ body {
 }
 
 /* ------------------Our Portfolio */
-
-.portfolio-list {
-}
-
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-
     gap: 72px 24px;
   }
 }
@@ -528,7 +519,6 @@ body {
 
 .portfrolio-container {
   padding: 32px 16px;
-
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -550,6 +540,7 @@ body {
     width: calc((100% - 24px) / 2);
     margin-bottom: 0;
   }
+
   .portfolio-item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -655,8 +646,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-logo-container {
-    text-align: left;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -675,6 +666,7 @@ body {
     margin-bottom: 0;
   }
 }
+
 @media screen and (min-width: 1158px) {
   .footer-socials-container {
     margin-right: auto;
@@ -713,7 +705,6 @@ body {
 
 .subscribe-title {
   margin-bottom: 16px;
-
   font-weight: 500;
   text-align: center;
   color: var(--white-standart-color);
@@ -930,12 +921,11 @@ body {
 
 .form-title {
   margin-bottom: 16px;
-
   font-weight: 500;
   text-align: center;
-
   color: #2e2f42;
 }
+
 .form-label-container {
   margin-bottom: 8px;
 }
@@ -1078,6 +1068,7 @@ body {
 
   color: #4d5ae5;
 }
+
 /* 
 .mobile-menu-overlay {
   position: fixed;
