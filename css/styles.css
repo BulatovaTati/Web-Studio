@@ -6,7 +6,6 @@ body {
 
   background-color: var(--white-standart-color);
   color: var(--body-text-color);
-  overflow: hidden;
 }
 
 .container {
