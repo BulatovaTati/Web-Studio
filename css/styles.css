@@ -1069,7 +1069,6 @@ body {
 
   color: #4d5ae5;
 }
-/* ////////////////////////////////// */
 
 .mobile-menu {
   position: fixed;
@@ -1121,6 +1120,7 @@ body {
   justify-content: left;
   gap: 40px;
 }
+
 .menu-address-item:not(:last-child) {
   margin-bottom: 24px;
 }
