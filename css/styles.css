@@ -6,7 +6,6 @@ body {
 
   background-color: var(--white-standart-color);
   color: var(--body-text-color);
-  overflow: hidden;
 }
 
 .container {
@@ -136,6 +135,12 @@ body {
   align-items: center;
 }
 
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .socials-link {
   display: flex;
   justify-content: center;
@@ -146,6 +151,12 @@ body {
   background-color: var(--icons-bcg);
   fill: var(--icons-fill);
   border-radius: 50%;
+  transition: background-color var(--animation-time) var(--timing-function);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: #31d0aa;
 }
 
 /* --------------------Header */
@@ -482,15 +493,12 @@ body {
   text-align: center;
 }
 
-.team-socials-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
 .team-member-text {
   margin-bottom: 8px;
+}
+
+.team-socials-list {
+  gap: 24px;
 }
 
 .team-socials-link {
@@ -688,19 +696,7 @@ body {
 }
 
 .footer-socials-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
-}
-
-.footer-socials-link {
-  transition: background-color var(--animation-time) var(--timing-function);
-}
-
-.footer-socials-link:hover,
-.footer-socials-link:focus {
-  background-color: #31d0aa;
 }
 
 .subscribe-title {
